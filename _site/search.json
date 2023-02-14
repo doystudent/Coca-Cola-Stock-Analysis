@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Coca-Cola Stocks",
+    "section": "",
+    "text": "How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE!?????!?!?!?!?!?!?!?!? The data used is by YAHOO!!!! Finance through excel.\nI started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. now we can determine if Coca Cola Stocks have a good trend line and it’s safe to say that soon, there may be a drop again but it will definitely rise back up in around 10-20 years."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Matthew Ng and my email is matthewng08@gmail.com\nAll thanks to this guy here: Kane’s Free Data Science Bootcamp\nHere is the link to the github page so you can use my Repo!\nHere are some sources I used!\nThanks to this source from Kaggle.\nThanks to the stock market so I can double check my work!"
+  }
+]

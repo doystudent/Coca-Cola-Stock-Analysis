@@ -1,0 +1,41 @@
+---
+title: "Coca-Cola Stocks"
+---
+
+How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE!?????!?!?!?!?!?!?!?!?
+The data used is by YAHOO!!!! Finance through excel.
+
+I started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. now we can determine if Coca Cola Stocks have a good trend line and it's safe to say that soon, there may be a drop again but it will definitely rise back up in around 10-20 years.              
+
+
+```{r Coke-Stock-Prices}
+#| echo: False
+#| message: False
+#| warning: False
+
+library(tidyverse)
+library(readxl)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_excel("COCO_COLA.xlsx")
+
+p <- ggplot(data = my_data, 
+            mapping = aes(x = Date, 
+                          y = High)) + 
+        geom_line() +
+        labs(y = "$DOLLA$", 
+             x = "Year",
+             title = "Coca-Cola Stock Price Over the Last Few Years",
+             subtitle = "The Coca-Cola Company seems to be having a good trend line.",
+             caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance")
+
+ggplotly(p)
+
+ 
+
+```
+
+```{r}
+
+```
