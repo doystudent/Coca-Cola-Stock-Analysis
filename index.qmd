@@ -20,22 +20,48 @@ library(plotly)
 
 my_data <- read_excel("COCO_COLA.xlsx")
 
-p <- ggplot(data = my_data, 
+p <- ggplot(data = my_data, # Selects the data to analyze
             mapping = aes(x = Date, 
-                          y = High)) + 
-        geom_line() +
+                          y = High)) + # This sets the x and y axis
+        geom_line() + # Creates the line
         labs(y = "$DOLLA$", 
              x = "Year",
              title = "Coca-Cola Stock Price Over the Last Few Years",
              subtitle = "The Coca-Cola Company seems to be having a good trend line.",
-             caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance")
+             caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance") 
+# Labs to label the titles and everything
 
-ggplotly(p)
+ggplotly(p) # This is to make it so that you can zoom into certain sections
 
  
 
 ```
 
-```{r}
 
+Let's see some other stocks to compare.
+
+```{r}
+#| echo: False
+#| message: False
+#| warning: False
+
+library(tidyverse)
+library(readxl)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_excel("Pepsi_Stock_Data.xlsx")
+
+
+ggplot(data = my_data, 
+            mapping = aes(x = Date, 
+                          y = High)) + 
+        geom_line() +
+        labs(y = "$DOLLA$", 
+             x = "Year",
+             title = "Pepsi Stocks have a really good compound trend line!",
+             caption = "Pepsi stocks used with Macro Trends")
+# everything except that it's Pepsi
 ```
+
+
