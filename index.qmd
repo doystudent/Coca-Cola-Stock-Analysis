@@ -18,28 +18,19 @@ library(ggplot2)
 library(plotly)
 ```
 
-
 ```{r Coke-Stock-Prices}
 #| echo: false
 #| message: false
 #| warning: false
 
 my_data <- read_excel("COCO_COLA.xlsx")
+ 
+Analyze <- read_rds("Coke-Graph.rds")
 
-p <- ggplot(data = my_data, # Selects the data to analyze
-            mapping = aes(x = Date, 
-                          y = High)) + # This sets the x and y axis
-  geom_line() + # Creates the line
-  labs(y = "$DOLLA$", 
-       x = "Year",
-       title = "Coca-Cola Stock Price Over the Last Few Years",
-       caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance") 
-# Labs to label the titles and everything
-ggplotly(p) # This is to make it so that you can zoom into certain sections
+ggplotly(Analyze) # This is to make it so that you can zoom into certain sections
 ```
 
-
-Let's see some other stocks to compare.
+Let's see some other stocks to compare, so why not continue the Pepsi vs. Coke battle?
 
 ```{r}
 #| echo: false
@@ -49,20 +40,16 @@ Let's see some other stocks to compare.
 my_data <- read_excel("Pepsi_Stock_Data.xlsx")
 
 
-ggplot(data = my_data, 
-            mapping = aes(x = Date, 
-                          y = High)) + 
-        geom_line() +
-        labs(y = "$DOLLA$", 
-             x = "Year",
-             title = "Pepsi Stock Price Over the Last Few Years",
-             subtitle = "Pepsi Stocks have a really good compound trend line!",
-             caption = "Pepsi stocks used with Macro Trends")
-# everything except that it's Pepsi
+Read <- read_rds("Pepsi-Graph.rds")
+ggplotly(Read)
 ```
-The famous Pepsi vs. Coke 
+
+Pepsi stocks have a much bigger price range and doesn't seem like it wants to go down.
 
 ```{r}
+
+# The famous Pepsi vs. Coke 
+
 # Start off with something about Coke like when it started for example
 # 1. Investing, If you drink Coke everyday you may start thinking about Coke stocks
 

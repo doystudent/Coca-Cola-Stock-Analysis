@@ -5,13 +5,17 @@ title: "About"
 
 My name is Matthew Ng and my email is matthewng08@gmail.com
 
+## Links
+
 All thanks to this guy here: [Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info/)
 
 Here is the link to the github page so you can use my [Repo](https://github.com/doystudent/Coke_Final_Project_draft1)!
 
+## Sources
 
 Here are some sources I used!
 
-Thanks to this source from [Kaggle](https://www.kaggle.com/datasets/meetnagadia/coco-cola-stock-data-19622021).
+Thanks to these source from [Kaggle](https://www.kaggle.com/datasets/meetnagadia/coco-cola-stock-data-19622021) and
+[Macro Trends](https://www.macrotrends.net/stocks/charts/PEP/pepsico/stock-price-history).
 
 Thanks to the [stock market](https://www.google.com/finance/quote/KO:NYSE?sa=X&ved=2ahUKEwjFw5yTuYf9AhW3EVkFHaTyC4MQ3ecFegQISxAg&window=MAX) so I can double check my work!

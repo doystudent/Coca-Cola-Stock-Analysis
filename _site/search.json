@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "My name is Matthew Ng and my email is matthewng08@gmail.com\nAll thanks to this guy here: Kane’s Free Data Science Bootcamp\nHere is the link to the github page so you can use my Repo!\nHere are some sources I used!\nThanks to this source from Kaggle.\nThanks to the stock market so I can double check my work!"
+    "text": "My name is Matthew Ng and my email is matthewng08@gmail.com"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Coca-Cola Stocks",
     "section": "",
-    "text": "How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE?!??!?! The data used is by YAHOO!!!! Finance through excel.\nI started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. Now we can determine if Coca Cola Stocks have a good trend line and it’s safe to say that soon, there may be a drop in the next 5 - 10 years again but it will definitely rise back up in around 10-20 years based off of it’s patterns.\n\n\n\n\n\n\n\n\n\nLet’s see some other stocks to compare.\n\n\n\n\n\nThe famous Pepsi vs. Coke\n\n# Start off with something about Coke like when it started for example\n# 1. Investing, If you drink Coke everyday you may start thinking about Coke stocks\n\n# Then say something about the Plot\n# 2. While analyzing data there has been many ups and downs and around 2003 and 2020 stocks dropped most likely due to nervous investors and Covid.\n\n# \n# Put everything in R script\n#"
+    "text": "How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE?!??!?! The data used is by YAHOO!!!! Finance through excel.\nI started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. Now we can determine if Coca Cola Stocks have a good trend line and it’s safe to say that soon, there may be a drop in the next 5 - 10 years again but it will definitely rise back up in around 10-20 years based off of it’s patterns.\n\n\n\n\n\n\n\n\n\nLet’s see some other stocks to compare.\n\n\n\n\n\n\nThe famous Pepsi vs. Coke\n\n# Start off with something about Coke like when it started for example\n# 1. Investing, If you drink Coke everyday you may start thinking about Coke stocks\n\n# Then say something about the Plot\n# 2. While analyzing data there has been many ups and downs and around 2003 and 2020 stocks dropped most likely due to nervous investors and Covid.\n\n# \n# Put everything in R script\n#"
   },
   {
     "objectID": "Pepsi.html",
@@ -19,5 +19,19 @@
     "title": "Pepsi Stocks",
     "section": "",
     "text": "Let’s see some other stocks to compare."
+  },
+  {
+    "objectID": "about.html#links",
+    "href": "about.html#links",
+    "title": "About",
+    "section": "Links",
+    "text": "Links\nAll thanks to this guy here: Kane’s Free Data Science Bootcamp\nHere is the link to the github page so you can use my Repo!"
+  },
+  {
+    "objectID": "about.html#sources",
+    "href": "about.html#sources",
+    "title": "About",
+    "section": "Sources",
+    "text": "Sources\nHere are some sources I used!\nThanks to these source from Kaggle and Macro Trends.\nThanks to the stock market so I can double check my work!"
   }
 ]
