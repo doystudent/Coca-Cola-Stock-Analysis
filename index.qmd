@@ -25,7 +25,7 @@ library(plotly)
 
 my_data <- read_excel("COCO_COLA.xlsx")
  
-Analyze <- read_rds("Coke-Graph.rds")
+Analyze <- read_rds("Coca-Cola-Graph.rds")
 
 ggplotly(Analyze) # This is to make it so that you can zoom into certain sections
 ```
@@ -45,23 +45,4 @@ ggplotly(Read)
 ```
 
 Pepsi stocks have a much bigger price range and doesn't seem like it wants to go down.
-
-```{r}
-
-#| echo: false
-#| message: false
-#| warning: false
-
-# The famous Pepsi vs. Coke 
-
-# Start off with something about Coke like when it started for example
-# 1. Investing, If you drink Coke everyday you may start thinking about Coke stocks
-
-# Then say something about the Plot
-# 2. While analyzing data there has been many ups and downs and around 2003 and 2020 stocks dropped most likely due to nervous investors and Covid.
-
-# 
-# Put everything in R script
-# 
-```
 
