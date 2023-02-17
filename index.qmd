@@ -48,6 +48,10 @@ Pepsi stocks have a much bigger price range and doesn't seem like it wants to go
 
 ```{r}
 
+#| echo: false
+#| message: false
+#| warning: false
+
 # The famous Pepsi vs. Coke 
 
 # Start off with something about Coke like when it started for example
