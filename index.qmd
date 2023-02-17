@@ -2,53 +2,49 @@
 title: "Coca-Cola Stocks"
 ---
 
-How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE!?????!?!?!?!?!?!?!?!?
+How can we use data to determine how much Coca Cola Company stocks will grow and ultimately, should we start investing in COKE?!??!?!
 The data used is by YAHOO!!!! Finance through excel.
 
-I started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. now we can determine if Coca Cola Stocks have a good trend line and it's safe to say that soon, there may be a drop again but it will definitely rise back up in around 10-20 years.              
+I started off by organizing the variables so that we can see how the date connects to the price of the stocks by year. Now we can determine if Coca Cola Stocks have a good trend line and it's safe to say that soon, there may be a drop in the next 5 - 10 years again but it will definitely rise back up in around 10-20 years based off of it's patterns.              
 
-
-```{r Coke-Stock-Prices}
-#| echo: False
-#| message: False
-#| warning: False
-
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| 
 library(tidyverse)
 library(readxl)
 library(ggplot2)
 library(plotly)
+```
+
+
+```{r Coke-Stock-Prices}
+#| echo: false
+#| message: false
+#| warning: false
 
 my_data <- read_excel("COCO_COLA.xlsx")
 
 p <- ggplot(data = my_data, # Selects the data to analyze
             mapping = aes(x = Date, 
                           y = High)) + # This sets the x and y axis
-        geom_line() + # Creates the line
-        labs(y = "$DOLLA$", 
-             x = "Year",
-             title = "Coca-Cola Stock Price Over the Last Few Years",
-             subtitle = "The Coca-Cola Company seems to be having a good trend line.",
-             caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance") 
+  geom_line() + # Creates the line
+  labs(y = "$DOLLA$", 
+       x = "Year",
+       title = "Coca-Cola Stock Price Over the Last Few Years",
+       caption = "Coca-Cola stocks from 19 Jan 1962 to 19 Dec 2021 used with Yahoo Finance") 
 # Labs to label the titles and everything
-
 ggplotly(p) # This is to make it so that you can zoom into certain sections
-
- 
-
 ```
 
 
 Let's see some other stocks to compare.
 
 ```{r}
-#| echo: False
-#| message: False
-#| warning: False
-
-library(tidyverse)
-library(readxl)
-library(ggplot2)
-library(plotly)
+#| echo: false
+#| message: false
+#| warning: false
 
 my_data <- read_excel("Pepsi_Stock_Data.xlsx")
 
@@ -59,9 +55,22 @@ ggplot(data = my_data,
         geom_line() +
         labs(y = "$DOLLA$", 
              x = "Year",
-             title = "Pepsi Stocks have a really good compound trend line!",
+             title = "Pepsi Stock Price Over the Last Few Years",
+             subtitle = "Pepsi Stocks have a really good compound trend line!",
              caption = "Pepsi stocks used with Macro Trends")
 # everything except that it's Pepsi
 ```
+The famous Pepsi vs. Coke 
 
+```{r}
+# Start off with something about Coke like when it started for example
+# 1. Investing, If you drink Coke everyday you may start thinking about Coke stocks
+
+# Then say something about the Plot
+# 2. While analyzing data there has been many ups and downs and around 2003 and 2020 stocks dropped most likely due to nervous investors and Covid.
+
+# 
+# Put everything in R script
+# 
+```
 
